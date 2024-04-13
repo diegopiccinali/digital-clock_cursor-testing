@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Cambia el color del texto a blanco para mejor contraste */
+  background-image: url("../src/img/imagen.jpg"); /* Usa la imagen como fondo */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Oscurecimiento con negro semitransparente */
+  backdrop-filter: blur(8px); /* Difuminado */
+  z-index: -1;
+}
+
+#reloj {
+  border: thin solid black;
+  padding: 0px 20px;
+  border-radius: 1rem;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff; /* Fondo blanco */
+  border-radius: 10px; /* Esquinas redondeadas */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px auto; /* Centrado y margen exterior */
+  max-width: 600px; /* Ancho máximo para no ocupar toda la pantalla en dispositivos grandes */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  color: #333; /* Ajusta el color del texto para asegurar visibilidad */
+}
+
+.contenedor > * {
+  margin: 10px 0; /* Añade un margen vertical entre elementos */
+}
+
+h2,
+h3,
+label,
+button,
+input[type="number"],
+#resultado {
+  color: #333; /* Color oscuro para contraste */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 40%;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

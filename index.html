@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Operaciones Matemáticas</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <h2 id="reloj"></h2>
+      <input type="number" id="numero1" placeholder="1er número" />
+      <input type="number" id="numero2" placeholder="2do número" />
+      <div class="buttons">
+        <button onclick="sumarNumeros()">Sumar</button>
+        <button onclick="restarNumeros()">Restar</button>
+        <button onclick="multiplicarNumeros()">Multiplicar</button>
+        <button onclick="dividirNumeros()">Dividir</button>
+      </div>
+      <h3>Resultado: <span id="resultado"></span></h3>
+    </div>
+
+    <script src="./scripts/script.js" type="module"></script>
+  </body>
+</html>
